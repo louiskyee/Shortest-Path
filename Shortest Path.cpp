@@ -1,7 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <sstream>
-#include <string>
 #include <cmath>
 using namespace std;
 int Max_Distance = 1000001;
