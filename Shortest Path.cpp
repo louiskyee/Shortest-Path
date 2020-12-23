@@ -10,8 +10,8 @@ public:
 	int from;
 	vector<int> to;
 	vector<int> weight;
-	Path() :from(0), to(0), weight(0) {}	//***
-	Path(int _from, int _to, float _weight) :from(_from), to(_to), weight(_weight) {}	//***
+	Path() :from(0) {}
+	Path(int _from) :from(_from) {}
 };
 class Node {
 public:
@@ -154,13 +154,11 @@ public:
 };
 int main(void) {
 	int m, n, begin, end;
-	//scanf("%d%d%d%d", &m, &n, &begin, &end);
 	cin >> m >> n >> begin >> end;
 	Dijkstra graph;
 	int from, to;
 	float weight;
 	for (int i = 0; i < n; ++i) {
-		//scanf("%d%d%f", &from, &to, &weight);
 		cin >> from >> to >> weight;
 		graph.addEdge(from, to, weight);
 	}
